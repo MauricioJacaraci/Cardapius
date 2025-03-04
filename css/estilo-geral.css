@@ -59,6 +59,8 @@ header{
     justify-content: center;
 
 }
+
+
 header > h1{
     font-family: var(--fonte-do-titulo);
     font-size: var(--tamanho4);
@@ -117,15 +119,34 @@ main{
     width: 100%;
 }
 
+@media screen and (max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .menu-suspenso{
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 55px;
 
+        cursor: pointer;
+    }
+    .menu-suspenso:hover + .menu,
+    .menu-suspenso:active + .menu{
+        display: block;    
+    }
 
+}
+@media screen and (min-width: 801px){
+    .menu{
+        display: block;
+    }
+    .menu-suspenso{
+        display: none;
+    }
 
-
-
-
-
-
-
+    
+}
 
 
 
