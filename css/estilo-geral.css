@@ -1,0 +1,140 @@
+@font-face{
+    font-family: 'Stagera';
+    src: url('../fontes/Stagera.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fontes/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --fonte-do-titulo: 'Stagera', Arial, Helvetica, sans-serif;
+    --fonte1: 'Roboto', Arial, Helvetica, sans-serif;
+    --fonte2: 'Poppins', Arial, Helvetica, sans-serif;
+
+    --cor1: #ff4858;
+    --cor2: #1b7f79;
+    --cor3: #00ccc0;
+    --cor4: #72f2eb;
+    --cor5: #747f7f;
+
+    --cor6: #eca39a;
+    --cor7: #44d146;
+    --cor8: #2490ba;
+    
+    --branco: #ffffff;
+    --preto: #000000;
+    --amarelo: #f6ff00;
+
+
+    --tamanho0: 5px;
+    --tamanho1: 10px;
+    --tamanho2: 15px;
+    --tamanho3: 20px;
+    --tamanho4: 25px;
+    --tamanho5: 30px;
+    --tamanho6: 35px;
+    --tamanho7: 40px;
+    --tamanho8: 45px;
+    --tamanho9: 50px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: var(--cor2);  
+    display: flex;
+    justify-content: center;
+
+}
+header > h1{
+    font-family: var(--fonte-do-titulo);
+    font-size: var(--tamanho4);
+    color: var(--branco);
+    padding: 5px;
+    font-style: italic;
+}
+main{
+    display: flex;
+    height: 92.9vh;
+}
+.menu{
+    background-color: var(--cor2);  
+    padding: 15px 0 0 15px; 
+    height: 92.9vh;
+}
+.menu p{
+    color: var(--amarelo);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.menu > nav > a{
+    display: block;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-family: poppins;
+}
+.menu > nav > a:hover{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--amarelo);
+    color: black;
+}
+.container{
+    background-color: var(--branco);
+    display: flex;
+    height: 92.9vh;
+    padding: 5px;  
+    gap: 5px;
+    flex-basis: 100%;
+}
+.d1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.33%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.455);
+}
+.e1{
+    background-color: var(--cor6);
+}
+.e2{
+    background-color: var(--cor7);
+}
+.e3{
+    background-color: var(--cor8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
