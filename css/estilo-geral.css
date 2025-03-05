@@ -131,7 +131,6 @@ main{
 
         cursor: pointer;
     }
-   /* Mostrar o menu quando o menu-suspenso for ativado */
     header > .menu-suspenso:hover  main > .menu,
     header > .menu-suspenso:active  main > .menu{
         display: block;
