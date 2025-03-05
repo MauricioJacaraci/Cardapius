@@ -131,11 +131,11 @@ main{
 
         cursor: pointer;
     }
-    .menu-suspenso:hover + .menu,
-    .menu-suspenso:active + .menu{
-        display: block;    
+   /* Mostrar o menu quando o menu-suspenso for ativado */
+    header > .menu-suspenso:hover  main > .menu,
+    header > .menu-suspenso:active  main > .menu {
+        display: block;
     }
-
 }
 @media screen and (min-width: 801px){
     .menu{
