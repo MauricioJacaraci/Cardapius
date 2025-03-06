@@ -1,0 +1,85 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --cor_container: #97e4de;
+}
+.container{
+    background-color: var(--cor_container);
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card1{
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}.card1 > .cab{
+    background-color: tomato;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    height: 15%;
+}
+.card1 > .list-cards{
+    display: flex;
+    gap: 50px;
+    height: 85%;
+}
+.card1 > .list-cards > .cards{
+    background-color: tomato;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card2{
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    flex-basis: 33.33%;
+
+    
+}
+.card2 > .filtro{
+    background-color: tomato;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.card3{
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    flex-basis: 33.33%;
+}
+.card3 > .topClientes{
+    background-color: tomato;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

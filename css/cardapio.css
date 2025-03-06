@@ -1,0 +1,84 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --cor_container: #97e4de;
+
+    --cor-dos-cards: #f1f1f1;
+}
+.container{
+    background-color: var(--cor_container);
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    gap: 2px;
+}
+.cardapio{   
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 2px;
+}
+
+
+
+.cardapio > .cardapio-bot1{
+    border-radius: 5px;
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.cardapio > .cardapio-bot1 > .botoes{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-basis: 15%;
+}
+.cardapio > .cardapio-bot1 > .itens-cardapio{
+    display: flex;
+    flex-basis: 85%;
+    gap: 2px;
+}
+.cardapio > .cardapio-bot1 > .itens-cardapio > .acompanhamentos{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 33.333%;
+}
+.cardapio > .cardapio-bot1 > .itens-cardapio  > .carnes{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 33.333%;
+}
+.cardapio > .cardapio-bot1 > .itens-cardapio > .saladas{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 33.333%;
+}
+
+
+
+
+.cardapio > .cardapio-bot2{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 25%;
+}
+
+
+
+.imagem{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+}

@@ -37,6 +37,8 @@
     --preto: #000000;
     --amarelo: #f6ff00;
 
+    --corContainer: #d4ff00;
+
 
     --tamanho0: 5px;
     --tamanho1: 10px;
@@ -118,8 +120,8 @@ main{
     gap: 30px;
     align-items: center;
 }
-.container{
-    background-color: var(--branco);
+.containerPedidos{
+    background-color: var(--corContainer);
     display: flex;
     height: 92.9vh;
     padding: 5px;  
