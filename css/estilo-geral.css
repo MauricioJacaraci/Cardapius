@@ -97,7 +97,9 @@ main{
 .menu > nav > a {
     color: var(--branco);
     text-decoration: none;
-    padding: 10px 20px 10px 10px;
+    padding: 5px 20px 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 15px;
     font-weight: bold;
     font-family: poppins;
@@ -105,11 +107,11 @@ main{
     flex-direction: column;
     letter-spacing: 1px;
 }
-.menu > nav > a:hover{
+.menu > nav > a:hover, .menu > nav > a:active, .ativo{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: var(--amarelo);
-    color: black;
+    color: black !important;
 }
 .menu-rodape {
     position: fixed;
@@ -139,10 +141,6 @@ main{
         display: block;
     }   
 }
-
-
-
-
 
 
 
