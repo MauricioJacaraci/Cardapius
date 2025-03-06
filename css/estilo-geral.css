@@ -24,8 +24,8 @@
     --fonte2: 'Poppins', Arial, Helvetica, sans-serif;
 
     --cor1: #ff4858;
-    --cor2: #1b7f79;
-    --cor3: #00ccc0;
+    --cor2: #19773d;
+    --cor3: #e3f1f0;
     --cor4: #72f2eb;
     --cor5: #747f7f;
 
@@ -73,8 +73,16 @@ main{
     display: flex;
     height: 92.9vh;
 }
+.menu-suspenso{
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 30px;
+
+        cursor: pointer;
+    }
 .menu{
-    background-color: var(--cor2);  /*cor2 */
+    background-color: var(--cor2); 
     padding: 15px 0 0 15px; 
     height: 92.9vh;
 }
@@ -107,7 +115,7 @@ main{
     left: 48px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
 }
 .container{
@@ -119,32 +127,15 @@ main{
     width: 100%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .menu{
         display: none;
-    }
-    .menu-suspenso{
-        display: block;
-        position: fixed;
-        top: 10px;
-        left: 30px;
-
-        cursor: pointer;
-    }
-    header > .menu-suspenso:hover  main > .menu,
-    header > .menu-suspenso:active  main > .menu{
-        display: block;
     }
 }
-@media screen and (min-width: 801px){
+@media screen and (min-width: 901px){
     .menu{
         display: block;
-    }
-    .menu-suspenso{
-        display: none;
-    }
-
-    
+    }   
 }
 
 

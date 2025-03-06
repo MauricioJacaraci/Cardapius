@@ -11,7 +11,8 @@
 
 <body>
     <header>
-        <img class="menu-suspenso" width="22px" height="22px" src="imagens/menu-suspenso.png" alt="">
+        <img class="menu-suspenso" onclick="clickMenu()" width="22px" height="22px" src="imagens/menu.png"
+            alt="Menu Suspenso">
         <h1>Cardápius</h1>
     </header>
     <main>
@@ -20,19 +21,29 @@
             <nav>
                 <a href="dashboard.html">Dashboard</a>
                 <a href="pedidos.html">Pedidos</a>
-                <a class="ativo" href="cardapio.html">Cardápio</a>
+                <a href="cardapio.html">Cardápio</a>
                 <a href="produtos.html">Produtos</a>
             </nav>
             <div class="menu-rodape">
-                <a href="configuracao.html"><img width="22px" height="22px" src="imagens/contexto.png" alt=""></a>
-                <a href="#"><img width="22px" height="22px" src="imagens/desligado.png" alt=""></a>
-                
+                <a href="configuracao.html"><img width="22px" height="22px" src="imagens/settings.png" alt=""></a>
+                <a class="ativo" href="#"><img width="22px" height="22px" src="imagens/logout.png" alt=""></a>
+
             </div>
         </div>
         <div class="container">
-            
-        </div>        
+        </div>
     </main>
+
+    <script>
+        function clickMenu() {
+            let menu = document.querySelector('.menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 
