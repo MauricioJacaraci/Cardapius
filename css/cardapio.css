@@ -33,13 +33,7 @@
     flex-direction: column;
     gap: 2px;
 }
-.cardapio > .cardapio-bot1 > .botoes{
-    background-color: var(--cor-dos-cards);
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    flex-basis: 15%;
-}
+
 .cardapio > .cardapio-bot1 > .itens-cardapio{
     display: flex;
     flex-basis: 85%;
@@ -50,18 +44,30 @@
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .cardapio > .cardapio-bot1 > .itens-cardapio  > .carnes{
     background-color: var(--cor-dos-cards);
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .cardapio > .cardapio-bot1 > .itens-cardapio > .saladas{
     background-color: var(--cor-dos-cards);
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
@@ -76,21 +82,88 @@
 
 
 
-.imagem{
-    background-color: var(--cor-dos-cards);
-    
+.imagem{        
     width: 25%;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 .imagem > .caseira{
+    background-color: var(--cor-dos-cards);
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 50%;
 }
 .imagem > .feijoada{
+    background-color: var(--cor-dos-cards);
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 50%;
+}
+
+
+.acompanhamentos > h1{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.acompanhamentos > input{
+    width: 100%;
+    flex-basis: 12.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.carnes > h1{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.carnes > input{
+    width: 100%;
+    flex-basis: 12.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.saladas > h1{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.saladas > input{
+    width: 100%;
+    flex-basis: 12.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:2px;
+}
+
+
+.cardapio > .cardapio-bot1 > .botoes{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-basis: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.botoes > .salvar{
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(66, 168, 205);
+    cursor: pointer;
+}
+.botoes > .imprimir{
+    border: 1px solid black;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(66, 168, 205);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(39, 108, 133);
+    color: white;
 }
