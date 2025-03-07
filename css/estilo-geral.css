@@ -37,8 +37,6 @@
     --preto: #000000;
     --amarelo: #f6ff00;
 
-    --corContainer: #d4ff00;
-
 
     --tamanho0: 5px;
     --tamanho1: 10px;
@@ -110,7 +108,7 @@ main{
 .menu > nav > a:hover, .menu > nav > a:active, .ativo{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: var(--amarelo);
+    background-color: var(--branco);
     color: black !important;
 }
 .menu-rodape {
@@ -123,7 +121,7 @@ main{
     align-items: center;
 }
 .containerPedidos{
-    background-color: var(--corContainer);
+    background-color: var(--branco);
     display: flex;
     height: 92.9vh;
     padding: 5px;  

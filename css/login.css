@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../imagem-fundo/fundo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .area-login{
+    background-color: rgba(64, 123, 224, 0.483);
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    flex-basis: 50%;
+
+}
+.container > .extra{
+    width: 400px;
+    height: 400px;
+    flex-basis: 50%;
+}

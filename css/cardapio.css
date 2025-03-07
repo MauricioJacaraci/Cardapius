@@ -6,14 +6,14 @@
 }
 :root{
 
-    --cor_container: #97e4de;
+    --cor_container: #ffffff;
 
-    --cor-dos-cards: #f1f1f1;
+    --cor-dos-cards: #1e8463;
 }
 .container{
     background-color: var(--cor_container);
     width: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 5px;
     display: flex;
     gap: 2px;
 }
@@ -36,11 +36,12 @@
 
 .cardapio > .cardapio-bot1 > .itens-cardapio{
     display: flex;
-    flex-basis: 85%;
+    flex-basis: 90%;
     gap: 2px;
 }
 .cardapio > .cardapio-bot1 > .itens-cardapio > .acompanhamentos{
     background-color: var(--cor-dos-cards);
+    color: white;
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
@@ -51,6 +52,7 @@
 }
 .cardapio > .cardapio-bot1 > .itens-cardapio  > .carnes{
     background-color: var(--cor-dos-cards);
+    color: white;
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
@@ -61,6 +63,7 @@
 }
 .cardapio > .cardapio-bot1 > .itens-cardapio > .saladas{
     background-color: var(--cor-dos-cards);
+    color: white;
     border: 1px solid black;
     border-radius: 5px;
     flex-basis: 33.333%;
@@ -139,20 +142,20 @@
 
 
 .cardapio > .cardapio-bot1 > .botoes{
-    background-color: var(--cor-dos-cards);
-    border: 1px solid black;
-    border-radius: 5px;
     display: flex;
-    flex-basis: 15%;
+    flex-basis: 10%;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .botoes > .salvar{
     border: 1px solid black;
     height: 40px;
     width: 100px;
     border-radius: 10px;
-    background-color: rgb(66, 168, 205);
+    background-color: #1f7a68;
+    color: white;
+    font-weight: bolder;
     cursor: pointer;
 }
 .botoes > .imprimir{
@@ -160,10 +163,11 @@
     height: 40px;
     width: 150px;
     border-radius: 10px;
-    background-color: rgb(66, 168, 205);
+    background-color: #1f7a68;
+    color: white;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: rgb(39, 108, 133);
+    background-color: rgb(39, 133, 80);
     color: white;
 }
