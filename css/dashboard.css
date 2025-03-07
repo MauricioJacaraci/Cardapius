@@ -12,15 +12,13 @@
 .container{
     background-color: var(--cor_container);
     width: 100%;
-    padding: 5px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .card1{
-    padding: 5px;
-    border: 1px solid #000000;
     border-radius: 5px;
     flex-basis: 33.33%;
     display: flex;
@@ -36,8 +34,8 @@
 }
 .card1 > .list-cards{
     display: flex;
-    gap: 50px;
     height: 85%;
+    gap: 50px;
 }
 .card1 > .list-cards > .cards{
     background-color: var(--cor-dos-cards);
@@ -52,64 +50,45 @@
 
 
 .card2{
-    padding: 5px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    flex-basis: 33.33%;
-    display: flex;
-    flex-direction: column;   
-    gap: 5px; 
-}
-.card2 > .cab{
-    background-color: var(--cor-dos-cards);
-    border: 1px solid black;
-    border-radius: 5px;
-    flex-basis: 15%;
-}
-.card2 > .filtro{
-    background-color: var(--cor-dos-cards);
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 85%;
     
-}
-
-
-.card3{
-    border-radius: 5px;
-    flex-basis: 33.33%;
+    flex-basis: 66.66%;
     display: flex;
-    flex-direction: column;
     gap: 5px;
 }
-.card3 > .cab{
-    flex-basis: 30%;
-    padding-top: 5px;
-}
-.card3 > .topClientes{
-    height: 100%;
+.card2 > .graf1{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 70%;
-    padding-bottom: 10px;
 }
-.card3 > .cab{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
+.card2 > .graf2{
+    background-color: var(--cor-dos-cards);
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 table{
     width: 80%;
     height: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
 th{
-    padding-bottom: 5px;
+    background-color: rgb(169, 163, 163);
+    padding-bottom: 2px;    
+}
+th.coluna1{
+    border-top-left-radius: 5px;
+}
+th.coluna2{
+    border-top-right-radius: 5px;
 }
 td.nome-cliente{
     border: 1px solid black;
@@ -118,6 +97,21 @@ td.nome-cliente{
 }
 td{
     border: 1px solid black;
-    padding-left: 10px;
     text-align: center;
+}
+@media screen and (max-width: 792px){
+    #cd4{
+        display: none;
+    }
+    #cab2{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 610px){
+    #cd3{
+        display: none;
+    }
+    #cab2{
+        font-size: 15px;
+    }
 }

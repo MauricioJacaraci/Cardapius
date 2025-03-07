@@ -167,7 +167,7 @@
 .botoes2 > .imprimir{
     border: 1px solid black;
     height: 40px;
-    width: 150px;
+    width: 170px;
     border-radius: 10px;
     background-color: #1f7a68;
     color: white;
@@ -176,4 +176,12 @@
 .btn:hover{
     background-color: rgb(39, 133, 80);
     color: white;
+}
+@media screen and (max-width: 800px){
+    #cs1{
+        display: none;
+    }
+    .cardapio{
+        width: 100%;
+    }
 }
