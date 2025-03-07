@@ -145,7 +145,13 @@
     display: flex;
     flex-basis: 10%;
     align-items: center;
-    justify-content: space-evenly;
+}
+.cardapio > .cardapio-bot1 > .botoes2{
+    height: 0;
+    display: flex;   
+    align-self: flex-end; 
+    position: relative;
+    bottom: 42.5px;
 }
 
 .botoes > .salvar{
@@ -158,7 +164,7 @@
     font-weight: bolder;
     cursor: pointer;
 }
-.botoes > .imprimir{
+.botoes2 > .imprimir{
     border: 1px solid black;
     height: 40px;
     width: 150px;
