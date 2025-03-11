@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root{
+    --cor-de-tabela: #ffffff;
+}
+table{
+    background-color: var(--cor-de-tabela);
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+}
+th{
+    font-size: 10px;
+    text-align: left;
+    padding: 2px 0px 2px 5px;
+}
+th#titulo-cabec{
+    font-size: 15px;
+    text-align: center;
+    background-color: #00000051;
+    color: rgb(0, 0, 0);
+}
+th#endereco{
+    font-size: 10px;
+    text-align: center;
+    background-color: #0000001f;
+    color: rgb(0, 0, 0);
+}
+th#hora-id{
+    text-align: center;
+    padding: 2px;
+}
+
+td, th{
+    border: 1px solid rgba(0, 0, 0, 0.072);    
+    padding-left: 5px;
+}
+.td-botoes{
+    padding: 5px;
+    text-align: center;
+}
+.aprovar{
+    background-color: green;
+    color: white;
+}
+.cancelar{
+    background-color: red;
+    color: white;
+}
+.ver{
+    background-color: blue;
+    color: white;
+}
+
+
+.aprovar:hover{
+    background-color: rgb(1, 77, 1);
+    color: white;
+}
+.cancelar:hover{
+    background-color: rgb(119, 1, 1);
+    color: white;
+}
+.ver:hover{
+    background-color: rgb(5, 5, 131);
+    color: white;
+}
+tr > td > button{
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Até 500px: 7px */
+@media screen and (max-width: 500px) {
+    td, th {
+        font-size: 7px;
+    }
+    .aprovar, .cancelar, .ver{
+        font-size: 5px;
+    }
+}
+
+/* De 501px a 680px: 9px */
+@media screen and (min-width: 501px) and (max-width: 680px) {
+    td, th {
+        font-size: 9px;
+    }
+    .aprovar, .cancelar, .ver{
+        font-size: 6px;
+    }
+}
+
+/* De 681px a 1017px: 20px */
+@media screen and (min-width: 681px){
+    td, th {
+        font-size: 11px;
+    }
+    .aprovar, .cancelar, .ver{
+        font-size: 10px;
+    }
+}

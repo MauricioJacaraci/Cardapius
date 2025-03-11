@@ -51,7 +51,6 @@
     background-color: var(--cor8);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-radius: 5px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -82,10 +81,30 @@
 
 .d1 > .content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
+    padding: 2px;
+    overflow-y: auto;
+    gap: 5px;
 }
+/* Para navegadores baseados no WebKit (Chrome, Edge, Safari) */
+.d1 > .content::-webkit-scrollbar {
+    width: 2px; /* Ajuste a largura da barra */
+}
+
+.d1 > .content::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); /* Define a cor do fundo da barra */
+}
+
+.d1 > .content::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Deixa os cantos arredondados */
+}
+
+.d1 > .content::-webkit-scrollbar-thumb:hover {
+    background: #26ff00; /* Cor ao passar o mouse */
+}
+
 .d1 > .cab{
     display: flex;
     justify-content: space-between;
@@ -107,29 +126,28 @@
     font-size: 15px;
     color: white;
 }
-@media screen and (max-width: 530px){
+
+
+
+
+@media screen and (max-width: 530px) {
     .d1 > .cab > h1{
         font-size: 10px;
     }
     .d1 > .cab > p{
         font-size: 10px;
     }
-
 }
-@media screen and (max-width: 650px){
+
+
+@media screen and (min-width: 531px) and (max-width: 600px) {
     .d1 > .cab > h1{
         font-size: 12px;
     }
     .d1 > .cab > p{
         font-size: 12px;
     }
-
 }
-
-
-
-
-
 
 
 

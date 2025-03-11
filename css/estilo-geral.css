@@ -37,6 +37,8 @@
     --preto: #000000;
     --amarelo: #f6ff00;
 
+    --fundo-botão-configuração: #ffffff41;
+
 
     --tamanho0: 5px;
     --tamanho1: 10px;
@@ -119,6 +121,13 @@ main{
     flex-direction: column;
     gap: 30px;
     align-items: center;
+}
+.menu > .menu-rodape > a{
+    padding: 10px;
+    border-radius: 50%;
+}
+.menu-rodape > a:hover{
+    background-color: var(--fundo-botão-configuração);
 }
 .containerPedidos{
     background-color: var(--branco);
