@@ -6,14 +6,20 @@
 }
 :root{
 
+    --cor-branco: #ffffff;
+    --cor-vermelha: #ff0000;
+
     --cor_container: #ffffff;
 
     --cor-dos-cards: #1e8463;
+    --cor-hover-botao: rgb(24, 74, 167);
+
+    --borda-simples: 1px solid black;
 }
 .container{
     background-color: var(--cor_container);
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     gap: 10px;
 }
@@ -36,7 +42,7 @@
 
 .cardapio > .cardapio-bot1 > form{
     background-color: var(--cor-dos-cards);
-    border: 1px solid black;
+    border: var(--borda-simples);   
     border-radius: 5px;
     display: flex;
     flex-basis: 62%;
@@ -64,7 +70,7 @@
 .saladas > input{
     width: 100%;
     flex-basis: 8%;
-    border: 1px solid black;
+    border: var(--borda-simples);   
     border-radius: 5px;
     padding:5px;
 }
@@ -76,12 +82,12 @@
     align-items: center;
 }
 .salvar-imprimir > .salvar-btn{
-    border: 1px solid black;
+    border: var(--borda-simples);   
     height:30px;
     width: 150px;
     border-radius: 10px;
-    background-color: #1f7a68;
-    color: white;
+    background-color: var(--cor-dos-cards);
+    color: var(--cor-branco);
     font-weight: bolder;
     cursor: pointer;
     font-size: 12px;
@@ -89,12 +95,12 @@
     letter-spacing: 1px;
 }
 .salvar-imprimir > .imprimir-btn{
-    border: 1px solid black;
+    border: var(--borda-simples);   
     height: 30px;
     width: 175px;
     border-radius: 10px;
-    background-color: #1f7a68;
-    color: white;
+    background-color: var(--cor-dos-cards);
+    color: var(--cor-branco);
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
@@ -102,30 +108,79 @@
 }
 
 .cardapio > .cardapio-bot2{
-    
+    /* background-color: var(--cor-dos-cards);      */
     border-radius: 5px;
     flex-basis: 40%;
     display: flex;
     gap: 10px;
-
+    justify-content: space-evenly;
 }
-.cardapio-bot2 > .feijoada1,
-.cardapio-bot2 > .caseira1{
-    background-color: var(--cor-dos-cards);
-    border: 1px solid black;
+.cardapio > .cardapio-bot2 > .ativar-caseira{
+    background-color: var(--cor-branco);
+    /* border: var(--borda-simples);   */
     border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    flex-basis: 50%;
-    height: 100%;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardapio > .cardapio-bot2 > .ativar-feijoada{
+    background-color: var(--cor-branco);
+    /* border: var(--borda-simples);   */
+    border-radius: 5px;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > img,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > form,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > form > h2,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > form > h2{
+    font-size: 12px;
+    font-weight: bold;
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > form > button,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > form > button{
+    background-color: var(--cor-dos-cards);
+    border: var(--borda-simples);
+    color: var(--cor-branco);
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > form > label,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > form > label{
+    font-weight: bold;
+}
+.cardapio > .cardapio-bot2 > .ativar-caseira > form > button:hover,
+.cardapio > .cardapio-bot2 > .ativar-feijoada > form > button:hover{
+    background-color: var(--cor-hover-botao);
+    color: var(--cor-branco);
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
 
 
 
-
-/* ***************************************************************************************** */
+/* ***************************************************** */
 .imagem{        
     width: 25%;
     display: flex;
@@ -134,23 +189,96 @@
 }
 .imagem > .caseira{
     background-color: var(--cor-dos-cards);
-    border: 1px solid black;
+    border: var(--borda-simples);   
     border-radius: 5px;
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
 }
 .imagem > .feijoada{
     background-color: var(--cor-dos-cards);
-    border: 1px solid black;
+    border: var(--borda-simples);   
     border-radius: 5px;
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-
-
+.imagem > .feijoada > .upload-inserir-imagem,
+.imagem > .caseira > .upload-inserir-imagem{
+    display: flex;
+    flex-direction: column;
+}
+.imagem > .feijoada > .upload-inserir-imagem > form,
+.imagem > .caseira > .upload-inserir-imagem > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.imagem > .feijoada > .upload-inserir-imagem > form > h1,
+.imagem > .caseira > .upload-inserir-imagem > form > h1{
+    font-size: 15px;
+    text-align: center;
+    color: var(--cor-branco);
+}
+.imagem > .feijoada > .upload-inserir-imagem > form > label,
+.imagem > .caseira > .upload-inserir-imagem > form > label{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    color: var(--cor-branco);
+}
+.imagem > .feijoada > .upload-inserir-imagem > form > input,
+.imagem > .caseira > .upload-inserir-imagem > form > input{
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: var(--cor-branco);
+}
+@media screen and (max-width: 802px){
+    .imagem > .feijoada > .upload-inserir-imagem > form > input,
+    .imagem > .caseira > .upload-inserir-imagem > form > input{
+        font-size: 8px;
+    }    
+}
+@media screen and (min-width: 803px) and (max-width: 1100px){
+    .imagem > .feijoada > .upload-inserir-imagem > form > input,
+    .imagem > .caseira > .upload-inserir-imagem > form > input{
+        font-size: 8px;
+    }    
+}
+.imagem > .feijoada > .upload-inserir-imagem > form > button,
+.imagem > .caseira > .upload-inserir-imagem > form > button{
+    font-size: 10px;
+    border-radius: 5px;
+    width: 40px;
+    height: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.imagem > .feijoada > .upload-inserir-imagem > form > button:hover,
+.imagem > .caseira > .upload-inserir-imagem > form > button:hover{
+    background-color: var(--cor-vermelha);
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+.imagem > .feijoada > .upload-exibir-imagem,
+.imagem > .caseira > .upload-exibir-imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem > .feijoada > .upload-exibir-imagem > img,
+.imagem > .caseira > .upload-exibir-imagem > img{
+    width: 100px;
+    height: 100%;
+}
+/* //////////////////////////////////////////// */
 .salvar-btn:hover,
 .imprimir-btn:hover{
-    background-color: rgb(24, 74, 167);
-    color: white;
+    background-color: var(--cor-hover-botao);
+    color: var(--cor-branco);
 }
 @media screen and (max-width: 800px){
     #cs1{

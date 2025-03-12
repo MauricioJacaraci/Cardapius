@@ -38,38 +38,38 @@
                     <form autocomplete="off" action="#" method="post" name="cardapio" id="cardapio">
                         <div class="acompanhamentos">
                             <h1>ACOMPANHAMENTOS</h1>
-                            <input type="text" name="acomp1">
-                            <input type="text" name="acomp2">
-                            <input type="text" name="acomp3">
-                            <input type="text" name="acomp4">
-                            <input type="text" name="acomp5">
-                            <input type="text" name="acomp6">
-                            <input type="text" name="acomp7">
-                            <input type="text" name="acomp8">
+                            <input type="text" name="acomp1" value="Feijão com caldo">
+                            <input type="text" name="acomp2" value="Arroz branco">
+                            <input type="text" name="acomp3" value="Farofa">
+                            <input type="text" name="acomp4" value="Batata frita">
+                            <input type="text" name="acomp5" value="Macarrão alho e óleo">
+                            <input type="text" name="acomp6" value="Purê de batata">
+                            <input type="text" name="acomp7" value="Legumes cozidos">
+                            <input type="text" name="acomp8" value="Salada de maionese">
                         </div>
                     
                         <div class="carnes">
                             <h1>CARNES</h1>
-                            <input type="text" name="carne1">
-                            <input type="text" name="carne2">
-                            <input type="text" name="carne3">
-                            <input type="text" name="carne4">
-                            <input type="text" name="carne5">
-                            <input type="text" name="carne6">
-                            <input type="text" name="carne7">
-                            <input type="text" name="carne8">
+                            <input type="text" name="carne1" value="Bife à parmegiana">
+                            <input type="text" name="carne2" value="Frango à milanesa">
+                            <input type="text" name="carne3" value="Peixe frito">
+                            <input type="text" name="carne4" value="Carne de panela">
+                            <input type="text" name="carne5" value="Frango grelhado">
+                            <input type="text" name="carne6" value="Peixe grelhado">
+                            <input type="text" name="carne7" value="Carne moída">
+                            <input type="text" name="carne8" value="Frango à passarinho">
                         </div>
                     
                         <div class="saladas">
                             <h1>SALADAS</h1>
-                            <input type="text" name="salada1">
-                            <input type="text" name="salada2">
-                            <input type="text" name="salada3">
-                            <input type="text" name="salada4">
-                            <input type="text" name="salada5">
-                            <input type="text" name="salada6">
-                            <input type="text" name="salada7">
-                            <input type="text" name="salada8">
+                            <input type="text" name="salada1" value="Alface e tomate">
+                            <input type="text" name="salada2" value="Repolho">
+                            <input type="text" name="salada3" value="Cenoura ralada">
+                            <input type="text" name="salada4" value="Beterraba ralada">
+                            <input type="text" name="salada5" value="Salada de frutas">
+                            <input type="text" name="salada6" value="Salada de legumes">
+                            <input type="text" name="salada7" value="Salada de grão de bico">
+                            <input type="text" name="salada8" value="Salada de batata">
                         </div>
                     
                     </form>
@@ -79,17 +79,68 @@
                         <button class="imprimir-btn"> 🖨️ IMPRIMIR COMANDA</button>
                     </div>
                 </div>
+                
                 <div class="cardapio-bot2">
-                    <div class="feijoada1"></div>
-                    <div class="caseira1"></div>
+                    <div class="ativar-caseira">
+                        <img src="imagens/comida-caseira-300x300.jpg" alt="">
 
-                </div>
+                        <form method="post" action="status-bot.php">
+                            <h2>Comida Caseira</h2>
+                            <input type="checkbox" id="status_bot" name="status_bot" checked>
+                            <label for="status_bot">Ativo</label>
+                            <button type="submit">Salvar</button>
+                        </form>
+                    </div>
+                    <div class="ativar-feijoada">
+                        <img src="imagens/feijoada-300x300.jpg" alt="">
+
+                        <form method="post" action="status-bot.php">
+                            <h2>Feijoada</h2>
+                            <input type="checkbox" id="status_bot" name="status_bot" checked>
+                            <label for="status_bot">Ativo</label>
+                            <button type="submit">Salvar</button>
+                        </form>
+                    </div>
+                </div>  
 
             </div>
 
             <div id="cs1" class="imagem">
-                <div class="caseira"></div>
-                <div class="feijoada"></div>
+                <div class="caseira">
+                
+                    <div class="upload-inserir-imagem">
+                        <form action="upload.php" method="POST" enctype="multipart/form-data">
+                            <h1>Comida Caseira</h1>
+                            <label for="imagem">Escolha uma imagem:</label>
+                            <input type="file" name="imagem" id="imagem" accept="image/jpg, image/png" required>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+            
+                    
+                    <div class="upload-exibir-imagem">
+                        <img src="imagens/cardapio.jpg" alt="Imagem Enviada">
+                    </div>                
+
+                </div>
+
+                <div class="feijoada">
+
+                    <div class="upload-inserir-imagem">
+                        <form action="upload.php" method="POST" enctype="multipart/form-data">
+                            <h1>Feijoada</h1>
+                            <label for="imagem">Escolha uma imagem:</label>
+                            <input type="file" name="imagem" id="imagem" accept="image/jpg, image/png" required>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    
+                    
+                    <div class="upload-exibir-imagem">
+                        <img src="imagens/feijoada.jpg" alt="Imagem Enviada">
+                    </div>
+
+                </div>
             </div>
 
         </div>
